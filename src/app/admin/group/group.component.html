@@ -1,0 +1,19 @@
+<div class="container text-center">
+  <h1 class="Display-6">Groups</h1>
+  <table class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">Group id</th>
+      <th scope="col">Group name</th>
+      <th scope="col"># of users</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let group of groups">
+      <th scope="row">{{group.id}}</th>
+      <td>{{group.name}}</td>
+      <td>{{group.usersNumber}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
